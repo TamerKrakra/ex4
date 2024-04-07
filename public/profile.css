@@ -1,0 +1,241 @@
+
+/* Group members:-
+Abraham Zebidat 213013618
+Mohammed Tarabia 213011737 
+Tamer krakra 314657842 
+*/
+
+
+
+
+body{
+  background-image: url('background.jpg');  /* Set background image */
+  background-size: 35%;   /* Cover the entire background */
+  background-repeat: repeat;  /* repeat background */
+  background-attachment: fixed; /* Fixed background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply font family to various blocks */
+#txtblockinfo, .txtblockendorsement , .txtblock {
+  font-family: 'Bree Serif', 'serif';  /* Apply 'Bree Serif' font to these blocks */
+}
+
+/* Styling for main content section */
+.mainsection {
+  width: 80%;  /* Set width to 80% */
+  margin: 3% auto;  /* Center the section horizontally with 3% margin from top and bottom */
+  background-color: white;  /* White background color */
+  box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.2);  /* Add shadow effect */
+}
+
+
+.banner-container{
+
+  position: relative;
+  
+
+}
+/* Banner container styling */
+/* Banner container styling */
+#banner {
+  height: 100%; /* Set height to 100% of parent container */
+  background-repeat: no-repeat; /* Do not repeat background */
+  background-size: cover; /* Make the background image cover the entire div */
+  background-position: center; /* Center the background image */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align content vertically in the center */
+  height: 350px;
+  margin-left: 2%;
+  margin-right: -2%;
+}
+
+#banner img {
+  max-width: 100%; /* Ensure image does not exceed container width */
+  
+}
+
+/* Apply styles to the inner content */
+.banner-content {
+  max-width: 100%; /* Ensure the content doesn't exceed the width of the container */
+  left: -2%; /* Set left margin to 2% of the width */
+  box-sizing: border-box;  /* Include padding and border in the element's total width and height */
+  position: relative; /* Add position relative to enable absolute positioning for the image */
+}
+
+/* Styling for Mickey's image within banner */
+.banner-content img {
+  width: 200px;  /* Set width of the image */
+  height: 200px;  /* Set height of the image */
+  border: 10px solid #fff; /* 10px white frame */
+  border-radius: 50%; /* Circle shape */
+  position: absolute; /* Position absolutely within the container */
+  top: 70%;  /* Position from the top */
+  left: -2%; /* Position from the left */
+}
+
+/* Styling for main heading */
+h1{
+  text-align: center;  /* Center align the text */
+  font-size: 3vw; /* Relative font size in vw units */
+  font-family: 'Rammetto One', cursive , sans-serif; /* Use 'Rammetto One' font if available, else fallback to Cursive and system default */
+  padding-top: 10px; /* Add padding on the top */
+  text-shadow: 3px 3px 3px #999999; /* Add text shadow */
+  border-radius: 1px; /* Add border radius */
+}
+
+/*********************************************************************************************************
+***************************************************/
+
+/* Styling for various content blocks */
+.contentblockendorsement, .contentblockfriends, .contentblockinfo{
+  padding-left: 5%;  /* Add left padding */
+  padding-right: 5%; /* Add right padding */
+  padding-top: 2%; /* Add top padding */
+  padding-bottom: 2%; /* Add bottom padding */
+}
+
+/* Styling for information content block */
+.contentblockinfo{
+  display: flex;  /* Use flexbox */
+  flex-wrap: wrap; /* Wrap flex items onto multiple lines */
+}
+
+.txtblock {
+  flex: 1; /* Take up remaining space */
+  width: 40%; /* Set width */
+}
+
+.txtblock  div {
+  width: 40%; /* Set width */
+  margin-bottom: 20px; /* Add bottom margin */
+}
+
+.txtblock  div p {
+  margin-bottom: 10px; /* Add bottom margin */
+}
+
+.head{
+  font-size: 2.5vw; /* Relative font size in vw units */
+  font-family: 'Rammetto One', cursive , 'sans-serif'; /* Use 'Rammetto One' font if available, else fallback to Cursive and system default */
+  text-transform: uppercase; /* Convert text to uppercase */
+  text-align: center; /* Center align the text */
+}
+
+.contentblockfriends{
+  text-align: center; /* Center align the content */
+}
+
+.imgblockfriends {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Space items evenly */
+  flex-wrap: wrap; /* Wrap flex items onto multiple lines */
+  padding: 10px; /* Add padding */
+}
+
+.imgblockfriends img {
+  width: 200px; /* Set width */
+  height: 300px; /* Set height */
+  padding: 10px; /* Add padding */
+}
+
+.bottomtitle {
+  background-color: #5f5b5b; /* Set background color */
+  padding: 10px; /* Add padding */
+  font-weight: bold; /* Set font weight */
+  color: black; /* Set text color */
+}
+
+#txtblockinfo {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  padding: 3%; /* Add padding */
+  width: 950px; /* Set width */
+}
+
+img{
+  max-height: 600px; /* Maximum height */
+  max-width: 30vw;   /* Maximum width as a percentage of the viewport width */
+  width: 100%; /* Set width to 100% */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 400px;   /* Maximum width */
+}
+
+.imgblock {
+  flex: 1; /* Take up remaining space */
+  display: flex; /* Use flexbox */
+  height: 600px; /* Set height */
+  justify-content: center; /* Center align content horizontally */
+  align-items: center; /* Center align content vertically */
+}
+
+.txtblockinfoitem-group {
+  display: flex; /* Use flexbox */
+  justify-content: space-between ; /* Space items evenly */
+  width: 70%; /* Set width */
+}
+
+.txtblockinfoitem {
+  background-color: rgba(255, 255, 255, 0.8); /* Set background color */
+  padding: 2px; /* Add padding */
+  text-align: left; /* Align text to the left */
+  flex: 1; /* Take up remaining space */
+  margin-right:auto; /* Set right margin to auto */
+}
+
+.txtblockendorsement{
+  flex: 1; /* Take up remaining space */
+  float:right; /* Float content to the right */
+  width: 50%; /* Set width */
+  order: 2; /* Change order */
+}
+
+#dogimg2{
+  order :1; /* Change order */
+  max-height: 50%; /* Maximum height */
+  max-width: 100%;   /* Maximum width as a percentage of the viewport width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#dogimg {
+  order :2; /* Change order */
+  max-height: 50%; /* Maximum height */
+  max-width: 100%;   /* Maximum width as a percentage of the viewport width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.txtblock div{
+  width: 50%; /* Set width */
+}
+
+.contentblockendorsement {
+  background-image: url(clouds.webp); /* Set background image */
+  background-size: cover;   /* Cover the entire background */
+  background-repeat: repeat;  /* Do not repeat background */
+  display: flex; /* Use flexbox */
+}
+
+.advise {
+  text-align: center; /* Center align the text */
+  
+ 
+  background-color: white; /* Set background color */
+  margin-bottom: 15px; /* Add bottom margin */
+  padding: 10px; /* Add padding */
+  border-left: 10px solid #cccaca; /* Set border in left */
+}
+
+.adviser{
+
+  font-style: italic;  /* set italic font style for text */
+}
+
+.separator {
+  width: 40%; /* Set width */
+}
+
+
+
+
+

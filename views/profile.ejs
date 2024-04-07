@@ -1,0 +1,187 @@
+<!-- Author: Abraham Zbedat, Mohammed Tarabia, Tamer krakra -->
+<!-- Date: [3/1/24] -->
+<!-- Description: EJS template for a profile website. -->
+
+<!DOCTYPE html>
+<html lang = "en">
+
+<!-- Group members:-
+Abraham Zbedat 213013618
+Mohammed Tarabia 213011737
+Tamer krakra 314657842  
+ -->
+
+<!--*********************************************************************************************************************************************************-->
+<!--*********************************************************************************************************************************************************-->
+
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>My pofile</title>
+
+
+	    <!-- Links to an external CSS file named "profile.css" for styling the document -->
+
+        <link rel="stylesheet" href="profile.css">
+
+
+	    <!-- Links to Google Fonts stylesheet to import -->
+	<link href='https://fonts.googleapis.com/css?family=Rammetto%20One' rel='stylesheet'>
+	<link href="https://fonts.cdnfonts.com/css/a-cursive" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/bree-serif-2" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/serif" rel="stylesheet">
+                
+                
+                
+
+
+</head>
+
+
+
+
+<!--*********************************************************************************************************************************************************-->
+
+
+
+
+
+
+<body>
+
+
+
+	<div class="mainsection">
+
+
+
+		<!--*********************************************************************************************************************************************************-->
+		<!-- Banner start -->
+		<div  class="banner-container">
+           
+       
+			<div class="banner-content" id="banner" style="background-image: url('<%= bannerImagePath %>');">
+				<img src=" <%= profileImagePath %>" alt="<%= id %> image">         <!-- Mickey's image -->
+			</div>
+		</div>
+		<!-- Banner end -->
+<!--*********************************************************************************************************************************************************-->
+
+
+
+
+<!--*********************************************************************************************************************************************************-->
+<!--*********************************************************************************************************************************************************-->
+ <!-- Main heading -->
+		<h1> <%= title %> </h1>
+
+<!--*********************************************************************************************************************************************************-->
+<!--*********************************************************************************************************************************************************-->
+		 
+<!--info-->
+<!-- Information section -->
+		<div class="contentblockinfo" id="contentblockinfo">
+
+			<div class="txtblock" >
+		
+				        <!-- This paragraph contains introductory information about the concept of Rubber Duck Debugging -->
+				<p>
+					<%- long_text %>
+				</p>
+				
+				        <!-- This paragraph contains information about dogs being good companions and helpers -->
+				<p>
+						
+				</p>
+
+				  
+				<div id="txtblockinfo">
+
+					
+					            <!-- Each div in this section contains a group of related information -->
+				<div class="txtblockinfoitem-group" >
+					<p class="txtblockinfoitem">
+				
+					</p>
+					<p class="txtblockinfoitem">
+					
+						
+						
+					</p>
+				</div>
+				
+
+			</div>
+			
+			</div>
+
+			 <!--  image -->
+			<!-- This div contains an image -->
+			<div class="imgblock" id="dogimg">
+				<img src=" <%= image1ImagePath %>" alt="<%= id %> image">
+			</div>
+		</div>
+<!--*********************************************************************************************************************************************************-->
+<!--*********************************************************************************************************************************************************-->
+
+
+<!--Endorsement section-->
+
+		<div class="contentblockendorsement">
+			<div class="txtblockendorsement">
+				<h2 class="head"> Endorsement</h2>
+				<% advises.forEach((advise) => { %>
+				<div class="advise">
+					<p>
+						<%= advise.long_text %>
+					</p>
+					<hr class="separator">
+					<span class="adviser" ><%= advise.signature %></span>
+				</div>
+				<% }); %>
+			</div>
+			<div class="imgblock" id="dogimg2">
+				<img src="<%= image2ImagePath %>" alt="<%= id %> image">
+			</div>
+		</div>
+		<!--*********************************************************************************************************************************************************-->
+<!--*********************************************************************************************************************************************************-->
+
+
+<!--friends section-->
+		<div class="contentblockfriends">
+			<h2 class="head"> Meet the whole debugging squad </h2>
+			<div class="imgblockfriends">
+				<img src="<%= imageFriend1Path %>" alt="Friend 1">
+				<img src="<%= imageFriend2Path %>" alt="Friend 2">
+				<img src="<%= imageFriend3Path %>" alt="Friend 3">
+				<img src="<%= imageFriend4Path %>" alt="Friend 4"> <!-- Additional pic -->
+				<img src="<%= imageFriend5Path %>" alt="Friend 5"> <!-- Additional pic -->
+				<img src="<%= imageFriend6Path %>" alt="Friend 6"> <!-- Additional pic -->
+				<img src="<%= imageFriend7Path %>" alt="Friend 7"> <!-- Additional pic -->
+				<img src="<%= imageFriend8Path %>" alt="Friend 8">   <!-- Additional pic -->
+						 
+			</div>
+		</div>
+		<!--*********************************************************************************************************************************************************-->
+<!--*********************************************************************************************************************************************************-->
+
+
+
+		<!--*********************************************************************************************************************************************************-->
+<!--*********************************************************************************************************************************************************-->
+        <!-- Footer section -->
+		<div class="bottomtitle">
+			Zefat Academic College
+
+		</div>
+
+
+		<!--*********************************************************************************************************************************************************-->
+<!--*********************************************************************************************************************************************************-->
+
+	</div>
+</body>
+
+</html>
